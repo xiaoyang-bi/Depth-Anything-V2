@@ -3,14 +3,14 @@ now=$(date +"%Y%m%d_%H%M%S")
 
 epoch=120
 bs=2
-gpus=1
+gpus=7 #1
 lr=0.000005
 encoder=vitl
 dataset=SNDataset # vkitti
 img_size=518
 min_depth=0
-max_depth=300 # 80 for virtual kitti
-pretrained_from=/home/lsk/Depth-Anything-V2/checkpoints/depth_anything_v2_metric_vkitti_vitl.pth
+max_depth=256 #300 # 80 for virtual kitti
+pretrained_from= #/home/lsk/Depth-Anything-V2/checkpoints/depth_anything_v2_metric_vkitti_vitl.pth
 save_path=exp/SNDataset # exp/vkitti
 
 mkdir -p $save_path
